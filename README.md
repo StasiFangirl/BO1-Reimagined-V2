@@ -12,6 +12,10 @@
 
 [Donate](https://streamlabs.com/jbleezy)
 
+## Updated Change Notes
+* Removed Unlimited Sprint
+* Richtofen's player model in Moon and Ascension has been replaced with his default model
+
 ## Change Notes
 
 ## General
@@ -25,7 +29,7 @@
 * Maps auto restart correctly (box location gets randomized again)
 
 ## Players
-* Unlimited sprint
+* ~~Unlimited sprint~~
 * Backwards move speed, strafe move speed, and sprint strafe move speed are all at 100%
 * Self revives in solo are active whenever the player has at least 1 perk
 * Upgraded starting pistol given as self revive pistol above all others except Winter's Howl and Zap Gun
