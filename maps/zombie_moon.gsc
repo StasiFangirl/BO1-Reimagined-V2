@@ -1326,16 +1326,33 @@ gasmask_get_head_model( entity_num, gasmask_active )
 		case 2:
 			return "c_jap_takeo_dlc5_head";
 		case 3:
-			return "c_ger_richtofen_dlc5_head";
+			return "c_ger_richtofen_head";
+	}
+}
+
+gasmask_get_hat_model( entity_num, gasmask_active )
+{
+	if ( gasmask_active )
+	{
+		return 0;
+	}
+	switch ( entity_num )
+	{
+		case 3:
+			return "c_ger_richtofen_offcap";
 	}
 }
 
 gasmask_change_player_headmodel( entity_num, gasmask_active )
 {
 	self Detach( self.headModel, "" );
+	self Detach( self.hatModel, "" );
 	self.headModel = gasmask_get_head_model( entity_num, gasmask_active );
 	self Attach( self.headModel, "", true );
+	self.hatModel = gasmask_get_hat_model( entity_num, gasmask_active );
+	self Attach( self.hatModel, "", true );
 }
+
 
 gasmask_set_player_model( entity_num )
 {

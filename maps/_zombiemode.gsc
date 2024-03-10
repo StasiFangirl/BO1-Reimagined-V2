@@ -1729,9 +1729,6 @@ onPlayerConnect_clientDvars()
 	// makes FPS area in corner smaller
 	self SetClientDvar("cg_drawFPSLabels", 0);
 
-	// no cheats
-	self SetClientDvar("sv_cheats", 0);
-
 	// allows shooting while looking at players
 	self SetClientDvar("g_friendlyFireDist", 0);
 
@@ -1980,8 +1977,6 @@ onPlayerSpawned()
 		//self thread revive_grace_period();
 
 		self.move_speed = 1;
-
-		self SetPerk("specialty_unlimitedsprint");
 
 		if( isdefined( self.initialized ) )
 		{
